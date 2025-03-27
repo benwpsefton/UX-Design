@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* -- GLOBAL --*/
 body {
     font-family: "Roboto", sans-serif;
     padding: 0;
@@ -10,31 +11,10 @@ body {
     flex-shrink: 0;
 }
 
-figure {
-    margin: 0;
-    padding: 0;
-}
-
-.header {
-    display: flex;
-    justify-content: center;
-    gap: 500px;
-    background-color: #1F2937;
-    align-items: center;
-    padding-top: 12px;
-}
-
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.right-links {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    font-size: 18px;
 }
 
 a {
@@ -47,6 +27,34 @@ p {
     padding: 0;
 }
 
+button {
+    margin-top: 8px;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+/* ---------------- */
+
+/* -- TOP -- */
+.top {
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    padding-bottom: 150px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 500px;
+    background-color: #1F2937;
+    align-items: center;
+    padding-top: 12px;
+}
+
 .header-logo {
     font-size: 24px;
     display: flex;
@@ -55,6 +63,15 @@ p {
     color: #F9FAF8;
 }
 
+.right-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    font-size: 18px;
+}
+/* ---------------- */
+
+/* -- MAIN --*/
 .main {
     display: flex;
     align-items: center;
@@ -65,6 +82,7 @@ p {
     padding-right: 140px;
 }
 
+/* hero */
 .text-1 {
     font-size: 48px;
     color: #F9FAF8;
@@ -72,24 +90,6 @@ p {
     text-wrap: wrap;
     max-width: 500px;
     margin-bottom: 4px;
-}
-
-.image {
-    background-color: grey;
-    width: 500px;
-    height: 225px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #F9FAF8;
-}
-
-.top {
-    background-color: #1F2937;
-    display: flex;
-    flex-direction: column;
-    gap: 150px;
-    padding-bottom: 150px;
 }
 
 .text-2 {
@@ -111,8 +111,22 @@ p {
     font-size: 18px;
 }
 
-button {
-    margin-top: 8px;
+.image {
+    background-color: grey;
+    width: 500px;
+    height: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F9FAF8;
+}
+/* ---------------- */
+
+/* -- MID -- */
+.mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .info {
@@ -122,6 +136,13 @@ button {
     display: flex;
 }
 
+/* frames */
+.frames {
+    display: flex;
+    padding-top: 50px;
+    gap: 50px;
+}
+
 .frame {
     border: 4px solid #3882F6;
     width: 150px;
@@ -129,23 +150,6 @@ button {
     border-radius: 12px;
 }
 
-.frames {
-    display: flex;
-    padding-top: 50px;
-    gap: 50px;
-}
-
-.mid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.subtext {
-    text-wrap: wrap;
-    width: 150px;
-    text-align: center;
-}
 
 .fig-frame {
     display: flex;
@@ -153,6 +157,22 @@ button {
     gap: 6px;
 }
 
+.subtext {
+    text-wrap: wrap;
+    width: 150px;
+    text-align: center;
+}
+/* ---------------- */
+
+/* -- QUOTE --*/
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E5E7EB;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
 
 .quote-text {
     font-size: 36px;
@@ -171,14 +191,12 @@ button {
     justify-content: center;
     padding-left: 500px;
 }
+/* ---------------- */
 
-.quote {
+/* -- CALL TO ACTION --*/
+.entire-call {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #E5E7EB;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    justify-content: center;
 }
 
 .call {
@@ -206,9 +224,10 @@ button {
     gap: 4px;
 }
 
-.entire-call {
-    display: flex;
-    justify-content: center;
+.call-subtext {
+    font-size: 18px;
+    color: #E5E7EB;
+    font-weight: light;
 }
 
 .register-2 {
@@ -222,12 +241,7 @@ button {
     font-size: 18px;
 }
 
-.call-subtext {
-    font-size: 18px;
-    color: #E5E7EB;
-    font-weight: light;
-}
-
+/* -- FOOTER --*/
 .footer {
     background-color: #1F2937;
     color: #E5E7EB;
