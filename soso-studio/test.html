@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoSo Studio</title>
+    <link rel="stylesheet" href="/soso-studio/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/soso-studio/style.css">
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-success align-items-center justify-content-center">
+      <div class="container-xl justify-content-start">
+        <a href="#" class="navbar-brand">
+          <span class="fw-bold text-light">
+            <i class="bi bi-flower2"></i>
+            SoSo Studio
+          </span>
+        </a>
+        <!-- toggle button for mobile nav -->
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <!-- navbar links -->
+          <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="/soso-studio/index.html" class="nav-link text-light me-4">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="/soso-studio/comm.html" class="nav-link text-light me-4">Commissions</a>
+              </li>
+              <li class="nav-item">
+                <a href="/soso-studio/workshop.html" class="nav-link text-light me-4">Workshops</a>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link text-light me-4" data-bs-toggle="modal" data-bs-target="#reg-modal">Contact</button>
+              </li>
+              <li class="nav-item">
+                <a href="/soso-studio/about.html" class="nav-link text-light me-4">About Us</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+
+    <!-- carousel/image test -->
+     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+                <img src="/soso-studio/assets/img/04.jpg" alt="" class="d-block w-100 c-img">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                    <p class="mt-5 fs-3 text-uppercase">custom rugs slogan</p>
+                    <h1 class="display-1 fw-bolder text-capitalize">SoSo Studio</h1>
+                    <button class="btn btn-success px-4 py-2 fs-5 mt-5">Get Yours!</button>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="/soso-studio/assets/img/04.jpg" alt="" class="d-block w-100">
+            </div>
+            <div class="carousel-item c-item">
+                <img src="/soso-studio/assets/img/04.jpg" alt="" class="d-block w-100">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+     </div>
+    
+
+    <!-- modal itself -->
+    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Have a problem?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Please contact us using the box below.</p>
+            <label for="modal-email" class="form-label">Email address:</label>
+            <input type="email" class="form-control" id="modal-email" placeholder="e.g. mario@example.com">
+            <div class="form-floating mb-4 mt-3">
+              <textarea name="query" id="query" class="form-control"></textarea>
+              <label for="query">Your query...</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- JS SCRIPTS -->
+    <script src="/soso-studio/assets/js/bootstrap.bundle.js"></script>
+    <script>
+      const tooltips = document.querySelectorAll('.tt')
+      tooltips.forEach(t => {
+        new bootstrap.Tooltip(t)
+      })
+    </script>
+  </body>
+</html>
