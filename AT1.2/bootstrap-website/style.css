@@ -21,3 +21,13 @@ li {
     width: 0;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
+
+#hero {
+    display: block;
+}
+
+#video {
+    display: flex;
+    width: 100%;
+    height: 480px;
+}
