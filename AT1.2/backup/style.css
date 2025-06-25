@@ -1,0 +1,33 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+section {
+    padding: 60px 0;
+}
+
+#query {
+    height: 140px;
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.hero {
+    display: block;
+}
+
+.video {
+    display: flex;
+    width: 100%;
+    height: 480px;
+}

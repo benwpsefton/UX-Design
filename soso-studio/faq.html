@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoSo Studio</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-success align-items-center justify-content-center">
+      <div class="container-xl justify-content-start">
+        <a href="#" class="navbar-brand">
+          <div class="container align-items-center">
+            <img src="assets/img/logo.jpg" alt="logo" class="logo me-1 rounded d-inline">
+            <p class="fw-bold text-light d-inline">SoSo Studio</p>
+          </div>
+        </a>
+        <!-- toggle button for mobile nav -->
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <!-- navbar links -->
+          <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link text-light me-4">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="comm.html" class="nav-link text-light me-4">Commissions</a>
+              </li>
+              <li class="nav-item">
+                <a href="workshop.html" class="nav-link text-light me-4">Workshops</a>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link text-light me-4" data-bs-toggle="modal" data-bs-target="#reg-modal">Contact</button>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link text-light me-4">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="faq.html" class="nav-link text-light me-4">FAQs</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+
+    <section id="contact" class="mt-3">
+        <div class="container-md">
+          <div class="text-center">
+            <h2>Frequently Asked Questions</h2>
+            <p class="lead">Need some help? Please see the list below.</p>
+          </div>
+
+            <div class="row g-5 justify-content-around align-items-center">
+            <div class="col-6 col-lg-4">
+                <img
+                src="assets/img/placeholder.png"
+                alt=""
+                class="img-fluid"
+                />
+            </div>
+
+            <div class="col-lg-6">
+                <!-- accordion -->
+                <div class="accordion" id="chapters">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-1">
+                    <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#chapter-1"
+                        aria-expanded="true"
+                        aria-controls="chapter-1"
+                    >
+                        Commissions
+                    </button>
+                    </h2>
+                    <div
+                    id="chapter-1"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-1"
+                    data-bs-parent="#chapters"
+                    >
+                    <div class="accordion-body">
+                        <p>
+                        How do I commission a rug?<br>
+                            <br>
+                        Can I request a specific design, color palette, or size?<br>
+                            <br>
+                        How much does a custom rug cost?<br>
+                            <br>
+                        How long does it take to complete a rug?<br>
+                            <br>
+                        Do I need to pay a deposit?<br>
+                            <br>
+                        Can I make changes to my design after ordering?<br>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-2">
+                    <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#chapter-2"
+                        aria-expanded="true"
+                        aria-controls="chapter-2"
+                    >
+                        Workshops
+                    </button>
+                    </h2>
+                    <div
+                    id="chapter-2"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-2"
+                    data-bs-parent="#chapters"
+                    >
+                    <div class="accordion-body">
+                        <p>
+                        What happens in a rug-making workshop?<br>
+                            <br>
+                        Do I need any experience to attend?<br>
+                            <br>
+                        What should I bring with me?<br>
+                            <br>
+                        Where are the workshops held?<br>
+                            <br>
+                        How do I RSVP or book a spot?<br>
+                            <br>
+                        What if I need to cancel or reschedule?<br>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-3">
+                    <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#chapter-3"
+                        aria-expanded="true"
+                        aria-controls="chapter-3"
+                    >
+                        Shipping
+                    </button>
+                    </h2>
+                    <div
+                    id="chapter-3"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-3"
+                    data-bs-parent="#chapters"
+                    >
+                    <div class="accordion-body">
+                        <p>
+                        Can I pick up my rug in person?<br>
+                            <br>
+                        Do you offer delivery, and how much does it cost?<br>
+                            <br>
+                        Do you ship internationally?<br>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-4">
+                    <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#chapter-4"
+                        aria-expanded="true"
+                        aria-controls="chapter-4"
+                    >
+                        Rug Care and Maintennance
+                    </button>
+                    </h2>
+                    <div
+                    id="chapter-4"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-4"
+                    data-bs-parent="#chapters"
+                    >
+                    <div class="accordion-body">
+                        <p>
+                        How do I clean my custom rug?<br>
+                            <br>
+                        Can I vacuum my rug, and if so, how often?<br>
+                            <br>
+                        What should I do if I spill something on the rug?<br>
+                            <br>
+                        Can I machine wash or tumble dry my rug?<br>
+                            <br>
+                        What is the best way to prevent fading or wear?<br>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-5">
+                    <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#chapter-5"
+                        aria-expanded="true"
+                        aria-controls="chapter-5"
+                    >
+                        General Inquiries
+                    </button>
+                    </h2>
+                    <div
+                    id="chapter-5"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-5"
+                    data-bs-parent="#chapters"
+                    >
+                    <div class="accordion-body">
+                        <p>
+                        What payment methods do you accept?<br>
+                            <br>
+                        Do you take bulk or corporate orders?<br>
+                            <br>
+                        Do you offer gift vouchers?<br>
+                            <br>
+                        Who makes the rugs?<br>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer" class="mt-3">
+        <footer>
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-md-4 mb-3">
+              <h5>SoSo Studio</h5>
+              <p>rug slogan thing idk</p>
+            </div>
+            <div class="col-md-4 mb-3 justify-content-center">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a class="text-secondary" data-bs-toggle="modal" data-bs-target="#reg-modal">Contact</a></li>
+                <li><a href="about.html" class="text-secondary">About Us</a></li>
+                <li><a href="faq.html" class="text-secondary">FAQs</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-3 justify-content-center">
+              <h5>Follow Us</h5>
+              <ul class="list-inline social-icons">
+                <li class="list-inline-item"><a href="#"><i class="bi bi-facebook text-secondary"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="bi bi-x-lg text-secondary"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="bi bi-instagram text-secondary"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>legal bit</p>
+            </div>
+          </div>
+        </div>
+        </footer>
+    </section>
+
+    <!-- modal itself -->
+    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Have a problem?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Please contact us using the box below.</p>
+            <label for="modal-email" class="form-label">Email address:</label>
+            <input type="email" class="form-control" id="modal-email" placeholder="e.g. mario@example.com">
+            <div class="form-floating mb-4 mt-3">
+              <textarea name="query" id="query" class="form-control"></textarea>
+              <label for="query">Your query...</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- JS SCRIPTS -->
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="assets/js/tooltips.js"></script>
+</body>
+</html>
